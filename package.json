@@ -21,11 +21,17 @@
     "middleware"
   ],
   "dependencies": {
-    "eslint": "^8.15.0",
     "morgan": "^1.10.0",
     "winston": "^3.7.2"
   },
   "engines": {
     "node": ">= 12.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0"
   }
 }
