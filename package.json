@@ -7,18 +7,18 @@
     "type": "git",
     "url": "https://github.com/CyberMakers-Network/cyber-logger"
   },
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
-  },
   "author": "CyberMakers Network (https://github.com/CyberMakers-Network)",
-  "files": [
-    "lib/**/*"
-  ],
   "contributors": [
     "ImOhashi <leonardoohashi.mkt@gmail.com> (https://www.linkedin.com/in/leonardo-fonseca-ohashi/)"
   ],
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [
     "logger",
     "logging",
