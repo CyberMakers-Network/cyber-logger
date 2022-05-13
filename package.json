@@ -2,12 +2,15 @@
   "name": "cyber-logger",
   "description": "A simple log for corporate and community use",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/CyberMakers-Network/cyber-logger"
   },
-  "author": "ImOhashi <leonardoohashi.mkt@gmail.com> (https://www.linkedin.com/in/leonardo-fonseca-ohashi/)",
+  "author": "CyberMakers Network (https://github.com/CyberMakers-Network)",
+  "contributors": [
+    "ImOhashi <leonardoohashi.mkt@gmail.com> (https://www.linkedin.com/in/leonardo-fonseca-ohashi/)"
+  ],
   "license": "MIT",
   "keywords": [
     "logger",
