@@ -1,10 +1,5 @@
-const winston = require("winston");
+import winston from "winston";
 
-/**
- * Winston set levels for config logger
- *
- * @param { Object }
- */
 const levels = {
   error: 0,
   warn: 1,
@@ -13,12 +8,7 @@ const levels = {
   debug: 4,
 };
 
-/**
- * Color index for logger text in console
- *
- * @type { winston.config.AbstractConfigSetColors }
- */
-const colors = {
+const colors: winston.config.AbstractConfigSetColors = {
   error: "red",
   warn: "yellow",
   info: "green",
@@ -34,12 +24,7 @@ const level = () => {
 
 winston.addColors(colors);
 
-/**
- * Text format for console logger
- *
- * @type { winston.Logform.Format }
- */
-const format = winston.format.combine(
+const format: winston.Logform.Format = winston.format.combine(
   winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss:ms" }),
   winston.format.colorize({ all: true }),
   winston.format.printf(
@@ -47,12 +32,10 @@ const format = winston.format.combine(
   )
 );
 
-/**
- * Configuration for create log files
- *
- * @type { winston.transports.ConsoleTransportInstance | winston.transports.FileTransportInstance [] }
- */
-const transports = [
+const transports: (
+  | winston.transports.ConsoleTransportInstance
+  | winston.transports.FileTransportInstance
+)[] = [
   new winston.transports.Console(),
   new winston.transports.File({
     filename: "logs/error.log",
@@ -61,16 +44,11 @@ const transports = [
   new winston.transports.File({ filename: "logs/all.log" }),
 ];
 
-/**
- * Create a Winston module with configuration
- *
- * @type { winston.Logger }
- */
-const log = winston.createLogger({
+const logger: winston.Logger = winston.createLogger({
   level: level(),
   levels,
   format,
   transports,
 });
 
-module.exports = log;
+export { logger };
