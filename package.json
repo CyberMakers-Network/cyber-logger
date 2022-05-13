@@ -1,0 +1,31 @@
+{
+  "name": "cyber-logger",
+  "description": "A simple log for corporate and community use",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CyberMakers-Network/cyber-logger"
+  },
+  "author": "ImOhashi <leonardoohashi.mkt@gmail.com> (https://www.linkedin.com/in/leonardo-fonseca-ohashi/)",
+  "license": "MIT",
+  "keywords": [
+    "logger",
+    "logging",
+    "logs",
+    "loglevel",
+    "tools",
+    "morgan",
+    "winston",
+    "http",
+    "middleware"
+  ],
+  "dependencies": {
+    "eslint": "^8.15.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.7.2"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  }
+}
